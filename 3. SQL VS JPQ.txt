@@ -1,0 +1,4 @@
+3.
+- create table
+- drop table
+- select single attributes (in JPQL you can just select the entity)
