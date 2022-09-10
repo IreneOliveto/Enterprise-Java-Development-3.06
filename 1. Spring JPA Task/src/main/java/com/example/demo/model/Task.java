@@ -2,9 +2,12 @@ package com.example.demo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import java.util.Date;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Task {
     @Id
     private String title;
